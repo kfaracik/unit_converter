@@ -4,6 +4,9 @@ import React from 'react';
 import AppLoading from "expo-app-loading";
 import { useFonts } from 'expo-font';
 
+// React Navigation
+import RootStack from "./navigation/RootStack";
+
 import Welcome from './screens/Welcome';
 
 export default function App() {
@@ -17,7 +20,7 @@ export default function App() {
   }
 
   return (
-    <Welcome />
+    <RootStack />
   );
 }
 

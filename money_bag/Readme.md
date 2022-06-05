@@ -28,7 +28,11 @@
 ```expo install expo-font expo-app-loading```
 - navigation
 ```npm install @react-navigation/native```
-```expo install react-navigation-screens react-native-safe-area-context```
+<!-- ```expo install react-navigation-screens react-native-safe-area-context``` -->
+```expo install react-native-screens react-native-safe-area-context```
+```npm install @react-navigation/stack```
+- other
+```npm install react-native-gesture-handler```
 
 ## Sources
 - [checker](https://github.com/macwozni/Matrices)

@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from "react";
-// import styled from "styled-components/native";
-import styled from "styled-components/native";
 import { StatusBar } from "expo-status-bar";
+import styled from "styled-components/native";
 
 // custom component
 import { colors } from "../components/colors";
@@ -36,7 +35,6 @@ const BottomSection = styled.View`
     max-height: 55%;
     justify-content: flex-end;
 `;
-
 
 // image
 import background from "./../assets/bgs/background_v1.png";

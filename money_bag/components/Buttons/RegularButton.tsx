@@ -7,6 +7,10 @@ import {
     ViewStyle,
 } from "react-native";
 
+// TODO delete?
+import 'react-native-gesture-handler';
+
+
 // components 
 import { colors } from "../colors";
 import RegularText from "../Text/RegularText";
