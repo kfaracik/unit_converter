@@ -7,4 +7,5 @@ export const colors = {
     graylight: "#f3f4f6",
     graydark: "#4b5563",
     accent: "#fbcd77",
+    lightblack: '#333'
 }

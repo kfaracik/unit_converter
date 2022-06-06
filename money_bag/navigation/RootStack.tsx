@@ -3,6 +3,7 @@ import React, { FunctionComponent } from "react";
 // screens
 import Welcome from "../screens/Welcome";
 import HomeScreen from "../screens/HomeScreen";
+import ConverterScreen from "../screens/ConverterScreen";
 
 // custom components
 import { colors } from "../components/colors";
@@ -17,6 +18,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 export type RootStackParamList = {
     Home: undefined;
     Welcome: undefined;
+    Converter: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -41,14 +43,16 @@ const RootStack: FunctionComponent = () => {
                     headerLeftContainerStyle: {
                         paddingStart: 10,
                     },
-                    headerRight: () => (
-                        <Profile
-                            img={Avi}
-                            imgContainerStyle={{ backgroundColor: colors.tertiary }}
-                        />
-                    ),
+                    // TODO add dolar icon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    // headerRight: () => (
+                    //     <Profile
+                    //         img={Avi}
+                    //         imgContainerStyle={{ backgroundColor: colors.tertiary }}
+                    //     />
+                    // ),
                 }}
-                initialRouteName="Home"
+                // initialRouteName="Home"
+                initialRouteName="Converter"
             >
                 <Stack.Screen 
                     name="Welcome"
@@ -68,6 +72,10 @@ const RootStack: FunctionComponent = () => {
                         ),
                         headerLeft: () => <></>,
                     }}
+                />
+                <Stack.Screen
+                    name="Converter"
+                    component={ConverterScreen}
                 />
             </Stack.Navigator>
         </NavigationContainer>
