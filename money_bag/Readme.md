@@ -1,10 +1,10 @@
 
-<h1 align="center"> Multi-threaded gauss elimination method </h1> <br>
+<h1 align="center"> Wallet tracker app </h1> <br>
 
 ## Table of Contents
 * [Usage examples](#usage-examples)
 * [Technologies](#technologies)
-* [Range of functionalities](#range-of-functionalities)
+* [Functionalities](#functionalities)
 * [Setting up project](#Setting-up-project)
 
 ## Usage examples
@@ -16,23 +16,25 @@
 ## Technologies
 - react-native
 
-## Range of functionalities
+## Functionalities
 - 
 
 ## Setting up project
-- styled components
-```npm install styled-components```
-```npm install @types/styled-components @types/styled-components-react-native```
-```npm install styled-components --save```
-- loading
-```expo install expo-font expo-app-loading```
-- navigation
-```npm install @react-navigation/native```
-<!-- ```expo install react-navigation-screens react-native-safe-area-context``` -->
-```expo install react-native-screens react-native-safe-area-context```
-```npm install @react-navigation/stack```
-- other
-```npm install react-native-gesture-handler```
+- styled components</br>
+```npm install styled-components```</br>
+```npm install @types/styled-components @types/styled-components-react-native```</br>
+```npm install styled-components --save```</br>
+- loading</br>
+```expo install expo-font expo-app-loading```</br>
+- navigation</br>
+```npm install @react-navigation/native```</br>
+```expo install react-native-screens react-native-safe-area-context```</br>
+```npm install @react-navigation/stack```</br>
+- other</br>
+```npm install react-native-gesture-handler```</br>
+- picker (unit list)</br>
+```npm install react-native-picker-select --save```
+
 
 ## Sources
-- [checker](https://github.com/macwozni/Matrices)
+<!-- - [checker](https://github.com/macwozni/Matrices) -->
