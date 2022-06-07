@@ -46,7 +46,6 @@ const RootStack: FunctionComponent = () => {
                     name="Welcome"
                     component={Welcome}
                     options={{ headerShown: false }}
-                // navigation={navigation}
                 />
                 <Stack.Screen
                     name="Converter"
