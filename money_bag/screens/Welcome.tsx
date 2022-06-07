@@ -39,23 +39,22 @@ const BottomSection = styled.View`
 // image
 import background from "./../assets/bgs/background_v1.png";
 
-const Welcome: FunctionComponent = () => {
+const Welcome: FunctionComponent = ({ navigation }) => {
     return (
         <>
             <StatusBar style="light" />
-
             <WelcomeContainer>
                 <TopSection>
                     <TopImage source={background} />
                 </TopSection>
                 <BottomSection>
                     <BigText textStyle={{ width: "70%", marginBottom: 25 }}>
-                        Best way to track your money
+                        Best way to convert SI unit to Imperial
                     </BigText>
                     <SmallText textStyle={{ width: "70%", marginBottom: 25 }}>
-                        Best payment method, connects your money to your friends, family.
+                        Convert SI units to Imperial
                     </SmallText>
-                    <RegularButton onPress={() => {}}>
+                    <RegularButton onPress={() => { navigation.navigate('Converter') }}>
                         Get started
                     </RegularButton>
                 </BottomSection>

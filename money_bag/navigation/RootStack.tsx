@@ -2,14 +2,10 @@ import React, { FunctionComponent } from "react";
 
 // screens
 import Welcome from "../screens/Welcome";
-import HomeScreen from "../screens/HomeScreen";
 import ConverterScreen from "../screens/ConverterScreen";
 
 // custom components
 import { colors } from "../components/colors";
-import Greeting from "../components/Header/Greeting";
-import Profile from "../components/Header/Profile";
-import Avi from "../assets/avi/avatar.png"
 
 // React Navigation
 import { NavigationContainer } from "@react-navigation/native";
@@ -34,7 +30,7 @@ const RootStack: FunctionComponent = () => {
                         shadowColor: "transparent",
                         shadowOpacity: 0,
                         elevation: 0,
-                        height: 120,    
+                        height: 120,
                     },
                     headerTintColor: colors.secondary,
                     headerRightContainerStyle: {
@@ -43,35 +39,14 @@ const RootStack: FunctionComponent = () => {
                     headerLeftContainerStyle: {
                         paddingStart: 10,
                     },
-                    // TODO add dolar icon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                    // headerRight: () => (
-                    //     <Profile
-                    //         img={Avi}
-                    //         imgContainerStyle={{ backgroundColor: colors.tertiary }}
-                    //     />
-                    // ),
                 }}
-                // initialRouteName="Home"
-                initialRouteName="Converter"
+                initialRouteName="Welcome"
             >
-                <Stack.Screen 
+                <Stack.Screen
                     name="Welcome"
                     component={Welcome}
                     options={{ headerShown: false }}
-                />
-                <Stack.Screen 
-                    name="Home"
-                    component={HomeScreen}
-                    options={{ 
-                        headerTitle: (props) => (
-                            <Greeting 
-                                mainText="Hey Luke!"
-                                subText="Welcome back"
-                                {...props}
-                            />
-                        ),
-                        headerLeft: () => <></>,
-                    }}
+                // navigation={navigation}
                 />
                 <Stack.Screen
                     name="Converter"
