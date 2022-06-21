@@ -1,5 +1,5 @@
 
-<h1 align="center"> Wallet tracker app </h1> <br>
+<h1 align="center"> Unit corverter app </h1> <br>
 
 ## Table of Contents
 * [Usage examples](#usage-examples)
